@@ -22,7 +22,7 @@ app.use(cartRoute);
 
 
 ////////////////////
-const Port = 5000;
+const Port = process.env.PORT || 3000;
 app.listen(Port, () => {
-  console.log("server run on 5000 port");
+  console.log("server run on 3000 port");
 });
